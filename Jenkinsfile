@@ -17,7 +17,7 @@ pipeline {
            steps {
                 withSonarQubeEnv('mysonarqube')
                {
-                   sh 'mvn sonar:sonar -Dsonar.java.binaries=**/target/classes'
+                   sh 'mvn clean package sonar:sonar -Dsonar.java.binaries=**/target/classes'
                }
            }
          }

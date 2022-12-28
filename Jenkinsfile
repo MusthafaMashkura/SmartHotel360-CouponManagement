@@ -9,7 +9,7 @@ pipeline {
       stage('checkout') {
            steps {
              
-                git branch: 'master', url: ''
+                git branch: 'master', url: 'https://github.com/MusthafaMashkura/SmartHotel360-CouponManagement.git'
              
           }
         }

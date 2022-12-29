@@ -32,7 +32,7 @@ pipeline {
         }
              stage('Owasp Dependency check') {
            steps {
-               dependencyCheck additionalArguments: '--format html', odcInstallation: 'my-dpcheck'
+               dependencyCheck additionalArguments: '--format HTML', odcInstallation: 'my-dpcheck'
             }
         }
       stage('Build') {
